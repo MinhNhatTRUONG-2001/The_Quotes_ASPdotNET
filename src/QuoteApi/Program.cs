@@ -17,6 +17,13 @@ public class Program
         var connectionString = builder.Configuration.GetConnectionString("QuoteDb");
         builder.Services.AddDbContext<QuoteContext>(options =>
             options.UseSqlite(connectionString));
+        builder.Services.AddCors(options => {
+            options.AddDefaultPolicy(p => {
+                p.AllowAnyHeader();
+                p.AllowAnyMethod();
+                p.AllowAnyOrigin();
+            });
+        });
 
         builder.Services.AddControllers();
         // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -38,6 +45,8 @@ public class Program
             app.UseSwagger();
             app.UseSwaggerUI();
         }
+
+        app.UseCors();
 
         app.UseHttpsRedirection();
 

@@ -1,0 +1,9 @@
+﻿@page "/quotes/{user}/add"
+
+<h1>Add New Quote</h1>
+<h2>User: @User</h2>
+
+@code {
+    [Parameter]
+    public string? User { get; set; }
+}

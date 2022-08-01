@@ -1,0 +1,11 @@
+﻿@page "/quotes/{user}/edit/{id:int}"
+
+<h1>Edit Quote</h1>
+<h2>User: @User</h2>
+
+@code {
+    [Parameter]
+    public string? User { get; set; }
+    [Parameter]
+    public int? Id { get; set; }
+}

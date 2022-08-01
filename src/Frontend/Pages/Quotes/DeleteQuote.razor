@@ -1,0 +1,12 @@
+﻿@page "/quotes/{user}/delete/{id:int}"
+
+<h1>Delete Quote</h1>
+<h2>User: @User</h2>
+<h3>Are you sure you want to delete this quote?</h3>
+
+@code {
+    [Parameter]
+    public string? User { get; set; }
+    [Parameter]
+    public int? Id { get; set; }
+}
