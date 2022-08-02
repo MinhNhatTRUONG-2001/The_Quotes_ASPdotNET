@@ -1,7 +1,8 @@
 ﻿@using SharedLib
 
 <div class="quote">
-    <p><i>"@Quote.Quote"</i> - @Quote.SaidBy (@Quote.When)</p>
+    <p><i>"@Quote.Quote"</i></p>
+    <p>@Quote.SaidBy (@Quote.When)</p>
     @if (EditLink != null && DeleteLink != null)
     {
         <p><NavLink href=@EditLink>Edit</NavLink> or <NavLink href=@DeleteLink>Delete</NavLink> this quote</p>

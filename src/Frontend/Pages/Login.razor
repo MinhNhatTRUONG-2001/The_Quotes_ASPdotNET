@@ -7,7 +7,7 @@
 <p>Write your username here:</p>
 <input type="text" @bind="User" />
 <button @onclick="HandleValidSubmit">Login</button><br>
-<p style="color:red">@ErrorMessage</p>
+<p class="alertmessage">@ErrorMessage</p>
 
 @code {
     private string? User { get; set; }

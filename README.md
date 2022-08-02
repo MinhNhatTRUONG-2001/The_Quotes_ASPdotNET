@@ -10,9 +10,9 @@
 
 > Write your name, your estimation on how many points you will get and an estimate on how long it took to make the answer
 
-- Student name: 
-- Estimated points: 
-- Estimated time (hours): 
+- Student name: MinhNhat Truong
+- Estimated points: 20
+- Estimated time (hours): 14
 
 ***
 
