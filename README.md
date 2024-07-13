@@ -1,3 +1,5 @@
+**The application was deployed [here](https://quotefrontend20240710165909.azurewebsites.net) on Azure.**
+
 # Task 10: Web API, EF and Blazor
 
 <img alt="points bar" align="right" height="36" src="../../blob/badges/.github/badges/points-bar.svg" />
